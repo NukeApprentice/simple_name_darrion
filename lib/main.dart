@@ -107,9 +107,12 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text('Darrion has pushed the button this many times:'),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              style: const TextStyle(
+                  fontSize: 124.0,
+                  fontWeight: FontWeight.bold,
             ),
-          ],
+            ),
+        ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
