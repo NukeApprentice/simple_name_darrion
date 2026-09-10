@@ -55,3 +55,9 @@ jobs:
         run: |
           mkdir -p artifacts
           cp build/app/outputs/flutter-apk/*.apk artifacts/
+          
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: flutter-apk
+          path: artifacts/
